@@ -12,10 +12,10 @@ def lcm(n1, n2):
         if smallnum * i == bignum:
             np.append(cm, smallnum * i)
         elif smallnum == bignum:
-            cm.add(smallnum)
+            np.append(cm, smallnum)
             break
         else:
-            cm.append(int(round((smallnum * bignum)/gcd)))
+            np.append(cm, int(round((smallnum * bignum)/gcd)))
     cm = np.sort(np.unique(cm))
     return f"lcm: {cm[0]}"
 
