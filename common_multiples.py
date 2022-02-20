@@ -10,7 +10,7 @@ def lcm(n1, n2):
     gcd = gcd[(n1 % gcd == 0) & (n2 % gcd == 0)][-1]
     for i in numbers:
         if smallnum * i == bignum:
-            cm.append(cm, smallnum * i)
+            cm.append(smallnum * i)
         elif smallnum == bignum:
             cm.append(smallnum)
             break
