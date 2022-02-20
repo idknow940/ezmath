@@ -2,7 +2,7 @@ import numpy as np
 
 
 def lcm(n1, n2):
-    cm = np.array([])
+    cm = []
     bignum = np.sort(np.array([n1, n2]))[-1]
     smallnum = np.sort(np.array([n1, n2]))[0]
     numbers = np.arange(1, bignum + 1)
@@ -10,12 +10,12 @@ def lcm(n1, n2):
     gcd = gcd[(n1 % gcd == 0) & (n2 % gcd == 0)][-1]
     for i in numbers:
         if smallnum * i == bignum:
-            np.append(cm, smallnum * i)
+            cm.append(cm, smallnum * i)
         elif smallnum == bignum:
-            np.append(cm, smallnum)
+            cm.append(smallnum)
             break
         else:
-            np.append(cm, int(round((smallnum * bignum)/gcd)))
+            cm.append(int(round((smallnum * bignum)/gcd)))
     cm = np.sort(np.unique(cm))
     return f"lcm: {cm[0]}"
 
