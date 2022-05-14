@@ -34,6 +34,3 @@ def input_():
         else:
             print(lcm(n1, n2))  # 0.0020492076873779297
             continue
-
-
-# input_()
